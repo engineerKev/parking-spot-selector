@@ -3,7 +3,11 @@ import { useSelector } from 'react-redux';
 import ParkingSelect from './components/ParkingSelect'
 import ParkingInstructions from './components/ParkingInstructions'
 import './App.css';
-
+/*
+TODO:
+  see if select element can be styled
+  add randomizing functionality
+*/
 function App() {
   const { parkingBuilding, parkingSpot } = useSelector((store) =>  store.customerParking);
   const noAvailableSpots = useSelector((store) =>  store.parkingStructure.noAvailableSpots);
@@ -26,7 +30,7 @@ function App() {
             <ParkingSelect 
               selectId='parking-structures'
               selectLabel='Available parking structures'
-              defaultOption='Parking Buildings'
+              defaultOption='Parking Structures'
             />
           </>
         }

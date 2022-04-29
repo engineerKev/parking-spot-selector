@@ -16,7 +16,7 @@ function ParkingInstructions() {
   return (
     <div>
       <h3>Please proceed to parking spot {parkingSpot} in building {parkingBuilding.toUpperCase()}</h3>
-      <button onClick={newCustomerHasArrived}>next costumer</button>
+      <button id='next-customer' onClick={newCustomerHasArrived}>next customer</button>
     </div>
   )
 }
